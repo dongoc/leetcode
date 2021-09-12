@@ -43,7 +43,7 @@ var twoSum = function(nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
       const me = nums[i]
-      const pair = target - cur
+      const pair = target - me
 
       if (me in storage) { // 현재값이 존재해? (이전에 내 페어가 있어?)
           return [storage[me], i] // 그럼 내 이름으로 저장된 내 페어의 인덱스와 현재 나의 인덱스를 리턴해
